@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <%- include('nav') %>
+  <h1>Contactez-nous</h1>
+  <p>Vous pouvez nous contacter via ce formulaire :</p>
+  <form>
+    <label for="name">Nom :</label><br />
+    <input type="text" id="name" name="name" /><br /><br />
+    <label for="email">Email :</label><br />
+    <input type="email" id="email" name="email" /><br /><br />
+    <label for="message">Message :</label><br />
+    <textarea id="message" name="message" rows="5" cols="30"></textarea><br /><br />
+    <button type="submit">Envoyer</button>
+  </form>
+</body>
+</html>
